@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+.header {
+  background-color: rgb(21, 95, 168);
+  border: 0px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+    width: 100px;
+}
+.header-link a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.header-link a:hover{
+    background-color: blue;
+    border-radius: 15px;
+}
+.btn{
+    background-color: rgb(237, 111, 111);
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+}
+.btn:hover{
+    background-color: rgb(190, 39, 39);
+}
+.landing-page{
+    padding: 25px 50px;
+    background-color: rgb(21, 95, 168);
+    color: white;
+    border-radius: 0px 0px 50px 50px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.landing-page-left-section{
+    width=500px;
+}
+.landing-page img{
+    width: 250px;
+    border-radius: 40px;
+    padding: 0px 20px;
+}
+.landing-page-search input{
+    border-radius: 50px;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+}
+.landing-page-search button{
+    position: absolute;
+    left: 200px;
+
+}
