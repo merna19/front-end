@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        todo list
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="envelope">
+        <div class="container" >
+            <div>
+                <h3>
+                    ToDo List
+                </h3>
+            </div>
+            <div class="entry">
+                <label for="title_in">Task Title</label>
+                <input type="text" id= "title_in" placeholder="enter task title..">
+            </div>
+            <div class="entry">
+                <label for="desc_in">Description</label>
+                <input id="desc_in" type="text" placeholder="enter description..">
+            </div>
+            <div class="add-div" id="entry_btn">
+                <button onclick="addTask()">ADD</button>
+            </div>
+        </div>
+        <div class="container">
+            <div >
+                <div class="entry">
+                    <label for="search_in">Search</label>
+                    <input placeholder="search" id="search_in">
+                </div>   
+            </div>
+            <div class="search_div">
+                <button onclick="search()">search</button>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <h3>
+                    Task Display
+                </h3>
+            </div>
+            <div id="Task_display">  
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

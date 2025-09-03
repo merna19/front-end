@@ -1,0 +1,95 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    width: 60%;
+    min-height: 100vh;
+    display: block;
+    margin: 10px auto;
+    background-color: rgb(140, 204, 188);
+    color: white;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.envelope
+{
+    border-radius: 10px;
+    background-color: rgba(105, 156, 143, 0.5);
+}
+.container{
+    width: 100%;
+    padding: 10px 15px;
+    display: block;
+    color: white;
+}
+.entry{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+    align-items:center;
+}
+input{
+    width: 100%;
+    height: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(100, 98, 98);;
+    background-color: beige;
+    margin: 10px;
+    align-items: center;
+}
+.add-div{
+        display: flex;
+        justify-content: right;
+}
+
+.add-div button{
+    width: 100px;
+    background-color: rgb(182, 176, 176);
+    color: rgb(47, 138, 115);
+    border-radius: 15px;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.add-div button:hover{
+    cursor: cell;
+}
+.search_div
+{
+    position: relative;
+}
+.search_div button{
+    width: 70px;
+    background-color: rgb(143, 165, 161);
+    color: rgb(47, 138, 115);
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.search_div button:hover{
+    cursor: pointer;
+}
+.Task_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.Task{
+    width: 60%;
+    max-height: 100 vh;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(100, 98, 98);
+    padding: 1px;
+    margin: 2px 0px ;
+}
