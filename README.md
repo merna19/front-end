@@ -1,7 +1,7 @@
 # front-end
 A beginner-friendly project repository to practice HTML and CSS concepts. Includes exercises, mini-projects, and layout experiments.
 
-# HTML + CSS Practice
+# HTML + CSS + bootstrap Practice
 
 This repository contains my practice work as I learn HTML and CSS. It includes basic structure examples, styled pages, layout experiments, and small front-end projects.
 
