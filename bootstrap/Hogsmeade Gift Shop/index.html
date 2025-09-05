@@ -20,23 +20,23 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Store</a>
+            <a class="nav-link" href="#G">Stores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-nowrap" href="#">Wizard Cards</a>
+            <a class="nav-link text-nowrap" href="#tabs">Wizard Cards</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle " href="" data-bs-toggle="dropdown" aria-expanded="false">
               Your House
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item fw-bold" href="#">Gryffindor</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">Slytherin</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">Hufflepuff</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">Ravenclaw</a></li>
+              <li><a class="dropdown-item fw-bold" href="#G">Gryffindor</a></li>
+              <li><a class="dropdown-item fw-bold" href="#S">Slytherin</a></li>
+              <li><a class="dropdown-item fw-bold" href="#H">Hufflepuff</a></li>
+              <li><a class="dropdown-item fw-bold" href="#R">Ravenclaw</a></li>
             </ul>
           </li>
         </ul>
@@ -50,6 +50,11 @@
     </div>
   </nav>
   <!--landing page-->
+  <div class="d-flex justify-content-center" id="Home">
+    <div class="spinner-grow text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
   <div class="container-fluid position-relative">
     <img src="img/hogwarts-horizontal.jpg" class="img-fluid w-100">
     <div class="position-absolute top-50 start-50 translate-middle text-center text-light">
@@ -60,15 +65,28 @@
       <a href="#" class="btn btn-primary">Shop Now</a>
     </div>
   </div>
+  <!--House Bar-->
+  <div class="progress mt-2 mb-2 ms-3 me-3">
+    <div class="progress-bar bg-danger" role="progressbar" aria-label="Segment one" style="width: 35%"
+      aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">Gryffindor</div>
+    <div class="progress-bar bg-success" role="progressbar" aria-label="Segment two" style="width: 20%"
+      aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">Slytherin</div>
+    <div class="progress-bar bg-warning" role="progressbar" aria-label="Segment three" style="width: 10%"
+      aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Hufflebuff</div>
+    <div class="progress-bar bg-info" role="progressbar" aria-label="Segment three" style="width: 15%"
+      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Ravenclaw</div>
+    Muggles
+  </div>
   <!--btn group-->
   <div class="btn-group d-flex justify-content-between">
-    <a href="#" class="btn btn-danger">Gryffindor</a>
-    <a href="#" class="btn btn-success">Slytherin</a>
-    <a href="#" class="btn btn-warning">Hufflebuff</a>
-    <a href="#" class="btn btn-info">Ravenclaw</a>
+    <a href="#G" class="btn btn-danger">Gryffindor</a>
+    <a href="#S" class="btn btn-success">Slytherin</a>
+    <a href="#H" class="btn btn-warning">Hufflebuff</a>
+    <a href="#R" class="btn btn-info">Ravenclaw</a>
   </div>
+
   <!--Gryffindor section-->
-  <div class="container-fluid bg-danger w-100 m-0 mb-5">
+  <div class="container-fluid bg-danger w-100 m-0 mb-5" id="G">
     <!--story section-->
     <div class="row w-100 bg-danger d-flex align-items-center m-0 mb-5" id="Gryffindor">
       <img src="img/gryffindor.jpg" class="img-fluid w-lg-50 w-30 col-4 rounded-5">
@@ -83,291 +101,357 @@
       </p>
     </div>
     <!--cards section-->
-    <div class="row  gap-3 d-flex justify-content-center pb-5">
-      <!--scarf-->
-      <div class="card col-3 bg-primary">
-        <img src="img/Gryffindor_scarf.jpg" class="card-img-top mt-3 mb-3">
-        <div class="card-body">
-          <h5 class="card-title">scarf</h5>
-          <p class="card-text">Wrap yourself in courage it's warm, cozy, and in true house colors</p>
-          <a href="#" class="btn btn-danger d-block">Buy</a>
-        </div>
-      </div>
-      <!--Nimbus2000-->
-      <div class="card col-3 bg-primary">
-        <img src="img/nimbus-2000.jpg" class="card-img-top mt-3 mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Nimbus-2000</h5>
-          <p class="card-text">Ride the fastest broomstick in the wizarding world — speed meets style!</p>
-          <a href="#" class="btn btn-danger d-block">Buy</a>
-        </div>
-      </div>
-      <!--Elder wand-->
-      <div class="card col-3 bg-primary">
-        <img src="img/dumbldore-wand.jpg" class="card-img-top mb-3 mt-3">
-        <div class="card-body">
-          <h5 class="card-title">The Elder Wand</h5>
-          <p class="card-text">Wield the power of legends — the Elder Wand, mightiest of them all.</p>
-          <a href="#" class="btn btn-danger d-block">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Slytherin section-->
-  <div class="container-fluid bg-success w-100 m-0 mb-5">
-    <!--story section-->
-    <div class="row w-100 bg-success d-flex align-items-center m-0 mb-5" id="Slytherin">
-      <img src="img/slytherin.jpg" class="img-fluid w-lg-50 w-30 col-4 rounded-5">
-      <p class="col-8 fs-lg-1 fs-6 pt-5 ">
-        Slytherin House celebrates ambition, determination, and the clever mind that always seeks greatness. As Severus
-        Snape once said:
 
-        “The mind is not a book, to be opened at will and examined at leisure.”
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-pills ms-5 mb-3" id="tabs">
+      <li class="nav-item">
+        <button class="nav-link active bg-info" data-bs-toggle="pill" data-bs-target="#supplies">Supplies</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#MagicalCards">Magical Cards</button>
+      </li>
+    </ul>
 
-        Here, you’ll find gifts that embody Slytherin’s spirit — for those unafraid to dream big, work hard, and leave
-        their mark on the wizarding world. Dare to achieve the extraordinary!
-      </p>
-    </div>
-    <!--cards section-->
-    <div class="row  gap-3 d-flex justify-content-center pb-5">
-      <!--scarf-->
-      <div class="card col-3 bg-dark">
-        <img src="img/slytherin_scarf.jpg" class="card-img-top mt-3 mb-3">
-        <div class="card-body">
-          <h5 class="card-title">scarf</h5>
-          <p class="card-text">Wrap yourself in courage it's warm, cozy, and in true house colors</p>
-          <a href="#" class="btn btn-success d-block">Buy</a>
-        </div>
-      </div>
-      <!--volde's wand-->
-      <div class="card col-3 bg-dark">
-        <img src="img/voldmord-wand.jpg" class="card-img-top mt-3 mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Voldemorde's wand</h5>
-          <p class="card-text">Power, ambition, and destiny — command the dark with precision</p>
-          <a href="#" class="btn btn-success d-block">Buy</a>
-        </div>
-      </div>
-      <!--Tom's diaries-->
-      <div class="card col-3 bg-dark">
-        <img src="img/tom-diaries.jpg" class="card-img-top mt-3 mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Tom Riddle's Diaries</h5>
-          <p class="card-text">Secrets and whispers of the past — a piece of magical history</p>
-          <a href="#" class="btn btn-success d-block">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--hufflebuff section-->
-  <div class="container-fluid bg-warning w-100 m-0 mb-5">
-    <!--story section-->
-    <div class="row w-100 bg-warning d-flex align-items-center m-0 mb-5" id="hufflebuff">
-      <img src="img/huffelbuff.jpg" class="img-fluid w-lg-50 w-30 col-4 rounded-5">
-      <p class="col-8 fs-lg-1 fs-6 pt-5 ">
-        The heart of Hogwarts, Hufflepuff honors fairness, loyalty, and hard work. As Cedric Diggory showed us all:<br>
+    <!-- ONE SHARED CONTENT AREA -->
+    <div class="tab-content">
+      <!-- Supplies Tab -->
+      <div class="tab-pane fade show active" id="supplies">
+        <div class="row gap-3 d-flex justify-content-center pb-5 m-3">
+          <!--scarf-->
+          <div class="card col-3 bg-primary">
+            <img src="img/Gryffindor_scarf.jpg" class="card-img-top mt-3 mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Scarf</h5>
+              <p class="card-text">Wrap yourself in courage it's warm, cozy, and in true house colors</p>
+              <a href="#" class="btn btn-danger d-block">Buy</a>
+            </div>
+          </div>
+          <!--nimbus2000-->
+          <div class="card col-3 bg-primary">
+            <img src="img/nimbus-2000.jpg" class="card-img-top mt-3 mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Nimbus-2000</h5>
+              <p class="card-text">Ride the fastest broomstick in the wizarding world — speed meets style!</p>
+              <a href="#" class="btn btn-danger d-block">Buy</a>
+            </div>
+          </div>
+          <!--Elder Wand-->
+          <div class="card col-3 bg-primary">
+            <img src="img/dumbldore-wand.jpg" class="card-img-top mb-3 mt-3">
+            <div class="card-body">
+              <h5 class="card-title">The Elder Wand</h5>
+              <p class="card-text">Wield the power of legends — the Elder Wand, mightiest of them all.</p>
+              <a href="#" class="btn btn-danger d-block">Buy</a>
+            </div>
+          </div>
 
-        “If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals.”<br>
+        </div>
+      </div>
 
-        Discover gifts that radiate warmth and kindness — perfect for the steadfast and true-hearted </p>
-    </div>
-    <!--cards section-->
-    <div class="row  gap-3 d-flex justify-content-center pb-5">
-      <!--scarf-->
-      <div class="card col-3 bg-light">
-        <img src="img/hufflebuff-scarf.jpg" class="card-img-top mt-3 mb-3">
-        <div class="card-body">
-          <h5 class="card-title">scarf</h5>
-          <p class="card-text">Wrap yourself in courage it's warm, cozy, and in true house colors</p>
-          <a href="#" class="btn btn-dark d-block">Buy</a>
-        </div>
-      </div>
-      <!--cedric wand-->
-      <div class="card col-3 bg-light">
-        <img src="img/cedric-wand.jpg" class="card-img-top mt-3  h-50">
-        <div class="card-body">
-          <h5 class="card-title">scarf</h5>
-          <p class="card-text">Channel Cedric’s courage — a wand for champions</p>
-          <a href="#" class="btn btn-dark d-block">Buy</a>
-        </div>
-      </div>
-      <!--3rd card-->
-      <div class="card col-3 bg-light">
-        <img src="img/egg.jpg" class="card-img-top mt-3  h-50">
-        <div class="card-body">
-          <h5 class="card-title">Triwizard Egg</h5>
-          <p class="card-text">A clue to great adventure — only the worthy will solve its riddle.</p>
-          <a href="#" class="btn btn-dark d-block">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Ravenclaw section-->
-  <div class="container-fluid bg-info w-100 m-0 mb-5">
-    <!--story section-->
-    <div class="row w-100 bg-info d-flex align-items-center m-0 mb-5" id="ravenclaw">
-      <img src="img/ravenclaw.jpg" class="img-fluid w-lg-50 w-30 col-4 rounded-5">
-      <p class="col-8 fs-lg-1 fs-6 pt-5 ">
-        Home to the wise and the curious, Ravenclaw celebrates learning, imagination, and individuality. As Luna
-        Lovegood once said:<br>
+      <!-- Magical cards Tab -->
+      <div class="tab-pane fade" id="MagicalCards">
+        <div class="row gap-3 d-flex justify-content-center pb-5 m-3">
+          <div class="card col-3 bg-primary">
+            <img src="img/forg card 2.jpg" class="card-img-top mt-3 mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Sirius Black</h5>
+              <p class="card-text">The brave godfather with a rebel’s heart — loyal, fearless, and free.</p>
+              <a href="#" class="btn btn-danger d-block">Buy</a>
+            </div>
+          </div>
 
-        “Wit beyond measure is man’s greatest treasure.”<br>
+          <div class="card col-3 bg-primary">
+            <img src="img/forg card 1.jpg" class="card-img-top mt-3 mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Hermione Granger</h5>
+              <p class="card-text">The brightest witch of her age, master of spells and intellect — always one step
+                ahead.</p>
+              <a href="#" class="btn btn-danger d-block">Buy</a>
+            </div>
+          </div>
 
-        Explore gifts that spark curiosity and celebrate intelligence — treasures for those who see the world
-        differently.
-      </p>
-    </div>
-    <!--cards section-->
-    <div class="row  gap-3 d-flex justify-content-center pb-5">
-      <!--scarf-->
-      <div class="card col-3 bg-primary">
-        <img src="img/ravenclaw-scarf.jpg" class="card-img-top mt-3  h-50">
-        <div class="card-body">
-          <h5 class="card-title">scarf</h5>
-          <p class="card-text">Wrap yourself in courage it's warm, cozy, and in true house colors</p>
-          <a href="#" class="btn btn-light d-block">Buy</a>
-        </div>
-      </div>
-      <!--cho's wand-->
-      <div class="card col-3 bg-primary">
-        <img src="img/cho-wand.jpg" class="card-img-top mt-3  h-50">
-        <div class="card-body">
-          <h5 class="card-title">Cho's Wand</h5>
-          <p class="card-text">Grace and intellect combined — a wand for the sharp-minded.</p>
-          <a href="#" class="btn btn-light d-block">Buy</a>
-        </div>
-      </div>
-      <!--3rd card-->
-      <div class="card col-3 bg-primary">
-        <img src="img/spectacles.jpg" class="card-img-top mt-3  h-50">
-        <div class="card-body">
-          <h5 class="card-title">Luna's spectrespecs</h5>
-          <p class="card-text">See the unseen — quirky, fun, and wonderfully unique.</p>
-          <a href="#" class="btn btn-light d-block">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--new Arrivals-->
-  <div class="container">
-    <h2 class="fs-1 text-warning text-center mb-2 fw-bold">
-      New Offers
-    </h2>
-  <table class="table table-light align-middle table-striped">
-    
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">item</th>
-        <th scope="col">offer</th>
-      </tr>
-    </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>White owl</td>
-      <td>20% OFF</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Posoin Culdron</td>
-      <td>Buy One Get One</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Wand Cleansing Kit</td>
-      <td>15% OFF</td>
-    </tr>
-  </tbody>
-</table>
-  </div>
-  <!--Contact us section-->
-  <form class="bg-light mt-5 p-5">
-    <h3>Contact Us</h3>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="Comment-area" class="form-label">Message</label>
-      <textarea class="form-control mb-3" id="Comment-area" rows="4"></textarea>
-      <button type="submit" class="btn btn-primary">Send</button>
-    </div>
-    <div id="formAlert" class="mt-3"></div>
-  </form>
-  <!--FAQ-->
-  <div class="container-fluid">
-    <h3 class="text-light m-5">
-      FAQ
-    </h3>
-    <div class="accordion m-5" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Q1: Is there International shipping?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>Yes! Our magical owls deliver across the globe — fast and safely.</strong>
+          <div class="card col-3 bg-primary">
+            <img src="img/forg card 3.jpg" class="card-img-top mt-3 mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter</h5>
+              <p class="card-text">The Boy Who Lived — courage, friendship, and the power to change the world.</p>
+              <a href="#" class="btn btn-danger d-block">Buy</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Q2: Are the wands and collectibles officially licensed?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>Absolutely. Every item is crafted with care and officially licensed for true fans.</strong>
+
+    </div>
+  </div>
+
+    <!--Slytherin section-->
+    <div class="container-fluid bg-success w-100 m-0 mb-5" id="S">
+      <!--story section-->
+      <div class="row w-100 bg-success d-flex align-items-center m-0 mb-5" id="Slytherin">
+        <img src="img/slytherin.jpg" class="img-fluid w-lg-50 w-30 col-4 rounded-5">
+        <p class="col-8 fs-lg-1 fs-6 pt-5 ">
+          Slytherin House celebrates ambition, determination, and the clever mind that always seeks greatness. As
+          Severus
+          Snape once said:
+
+          “The mind is not a book, to be opened at will and examined at leisure.”
+
+          Here, you’ll find gifts that embody Slytherin’s spirit — for those unafraid to dream big, work hard, and leave
+          their mark on the wizarding world. Dare to achieve the extraordinary!
+        </p>
+      </div>
+      <!--cards section-->
+      <div class="row  gap-3 d-flex justify-content-center pb-5">
+        <!--scarf-->
+        <div class="card col-3 bg-dark">
+          <img src="img/slytherin_scarf.jpg" class="card-img-top mt-3 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">scarf</h5>
+            <p class="card-text">Wrap yourself in courage it's warm, cozy, and in true house colors</p>
+            <a href="#" class="btn btn-success d-block">Buy</a>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Q3: Can I return or exchange a gift if needed?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>Yes, we offer easy returns and exchanges within 30 days of purchase.</strong>
+        <!--volde's wand-->
+        <div class="card col-3 bg-dark">
+          <img src="img/voldmord-wand.jpg" class="card-img-top mt-3 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Voldemorde's wand</h5>
+            <p class="card-text">Power, ambition, and destiny — command the dark with precision</p>
+            <a href="#" class="btn btn-success d-block">Buy</a>
+          </div>
+        </div>
+        <!--Tom's diaries-->
+        <div class="card col-3 bg-dark">
+          <img src="img/tom-diaries.jpg" class="card-img-top mt-3 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Tom Riddle's Diaries  <span class="badge bg-warning">New Arrival!</span></h5>
+            <p class="card-text">Secrets and whispers of the past — a piece of magical history</p>
+            <a href="#" class="btn btn-success d-block">Buy</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--Footer-->
-  <footer class="container-fluid bg-footer text-light text-center py-3 m-0 mt-5">
-    <!--breadcrumb-->
-    <section class="py-3 bg-breadcrumb border-top ">
-      <div class="container">
-        <nav aria-label="breadcrumb ">
-          <ol class="breadcrumb justify-content-center mb-0 ">
-            <li class="breadcrumb-item"><a href="#Home" class="link-light">Home</a></li>
-            <li class="breadcrumb-item"><a href="#shop" class="link-light">Gryffindor House</a></li>
-            <li class="breadcrumb-item"><a href="#shop" class="link-light">Slytherine House</a></li>
-            <li class="breadcrumb-item"><a href="#shop" class="link-light">Hufflebuff House</a></li>
-            <li class="breadcrumb-item"><a href="#shop" class="link-light">Ravenclaw House</a></li>
-            <li class="breadcrumb-item"><a href="#CU" class="link-light">Contact Us</a></li>
-            <li class="breadcrumb-item"><a href="#FAQ" class="link-light">FAQ</a></li>
-          </ol>
-        </nav>
+    <!--hufflebuff section-->
+    <div class="container-fluid bg-warning w-100 m-0 mb-5" id="H">
+      <!--story section-->
+      <div class="row w-100 bg-warning d-flex align-items-center m-0 mb-5" id="hufflebuff">
+        <img src="img/huffelbuff.jpg" class="img-fluid w-lg-50 w-30 col-4 rounded-5">
+        <p class="col-8 fs-lg-1 fs-6 pt-5 ">
+          The heart of Hogwarts, Hufflepuff honors fairness, loyalty, and hard work. As Cedric Diggory showed us
+          all:<br>
+
+          “If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals.”<br>
+
+          Discover gifts that radiate warmth and kindness — perfect for the steadfast and true-hearted </p>
       </div>
-    </section>
-    <p class="mb-1">© 2025 Harry Potter Gift Shop. All rights reserved.</p>
-  </footer>
-  <!--scripts links-->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+      <!--cards section-->
+      <div class="row  gap-3 d-flex justify-content-center pb-5">
+        <!--scarf-->
+        <div class="card col-3 bg-light">
+          <img src="img/hufflebuff-scarf.jpg" class="card-img-top mt-3 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">scarf</h5>
+            <p class="card-text">Wrap yourself in courage it's warm, cozy, and in true house colors</p>
+            <a href="#" class="btn btn-dark d-block">Buy</a>
+          </div>
+        </div>
+        <!--cedric wand-->
+        <div class="card col-3 bg-light">
+          <img src="img/cedric-wand.jpg" class="card-img-top mt-3  h-50">
+          <div class="card-body">
+            <h5 class="card-title">scarf</h5>
+            <p class="card-text">Channel Cedric’s courage — a wand for champions</p>
+            <a href="#" class="btn btn-dark d-block">Buy</a>
+          </div>
+        </div>
+        <!--3rd card-->
+        <div class="card col-3 bg-light">
+          <img src="img/egg.jpg" class="card-img-top mt-3  h-50">
+          <div class="card-body">
+            <h5 class="card-title">Triwizard Egg</h5>
+            <p class="card-text">A clue to great adventure — only the worthy will solve its riddle.</p>
+            <a href="#" class="btn btn-dark d-block">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Ravenclaw section-->
+    <div class="container-fluid bg-info w-100 m-0 mb-5" id="R">
+      <!--story section-->
+      <div class="row w-100 bg-info d-flex align-items-center m-0 mb-5" id="ravenclaw">
+        <img src="img/ravenclaw.jpg" class="img-fluid w-lg-50 w-30 col-4 rounded-5">
+        <p class="col-8 fs-lg-1 fs-6 pt-5 ">
+          Home to the wise and the curious, Ravenclaw celebrates learning, imagination, and individuality. As Luna
+          Lovegood once said:<br>
+
+          “Wit beyond measure is man’s greatest treasure.”<br>
+
+          Explore gifts that spark curiosity and celebrate intelligence — treasures for those who see the world
+          differently.
+        </p>
+      </div>
+      <!--cards section-->
+      <div class="row  gap-3 d-flex justify-content-center pb-5">
+        <!--scarf-->
+        <div class="card col-3 bg-primary">
+          <img src="img/ravenclaw-scarf.jpg" class="card-img-top mt-3  h-50">
+          <div class="card-body">
+            <h5 class="card-title">scarf</h5>
+            <p class="card-text">Wrap yourself in courage it's warm, cozy, and in true house colors</p>
+            <a href="#" class="btn btn-light d-block ">Buy</a>
+          </div>
+        </div>
+        <!--cho's wand-->
+        <div class="card col-3 bg-primary">
+          <img src="img/cho-wand.jpg" class="card-img-top mt-3  h-50">
+          <div class="card-body">
+            <h5 class="card-title">Cho's Wand</h5>
+            <p class="card-text">Grace and intellect combined — a wand for the sharp-minded.</p>
+            <a href="#" class="btn btn-light d-block ">Buy</a>
+          </div>
+        </div>
+        <!--3rd card-->
+        <div class="card col-3 bg-primary">
+          <img src="img/spectacles.jpg" class="card-img-top mt-3  h-50">
+          <div class="card-body">
+            <h5 class="card-title">Luna's spectrespecs</h5>
+            <p class="card-text">See the unseen — quirky, fun, and wonderfully unique.</p>
+            <a href="#" class="btn btn-light d-block ">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--new Arrivals-->
+    <div class="container">
+      <div class="alert alert-primary" role="alert">
+        New Offers arrived check them out!
+      </div>
+      <h2 class="fs-1 text-warning text-center mb-2 fw-bold">
+        New Offers
+      </h2>
+      <table class="table table-light align-middle table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">item</th>
+            <th scope="col">offer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>White owl</td>
+            <td>20% OFF</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Posoin Culdron</td>
+            <td>Buy One Get One</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Wand Cleansing Kit</td>
+            <td>15% OFF</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--Contact us section-->
+    <form class="bg-light mt-5 p-5" id="CU">
+      <h3>Contact Us</h3>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="Comment-area" class="form-label">Message</label>
+        <textarea class="form-control mb-3" id="Comment-area" rows="4"></textarea>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+      <div id="formAlert" class="mt-3"></div>
+    </form>
+    <!--FAQ-->
+    <div class="container" id="FAQ">
+      <h3 class="text-light m-5">
+        FAQ
+      </h3>
+      <div class="accordion m-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Q1: Is there International shipping?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Yes! Our magical owls deliver across the globe — fast and safely.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Q2: Are the wands and collectibles officially licensed?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Absolutely. Every item is crafted with care and officially licensed for true fans.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Q3: Can I return or exchange a gift if needed?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Yes, we offer easy returns and exchanges within 30 days of purchase.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Locations section-->
+    <div class="container-fluid w-100">
+      <ul class="list-group">
+        <li class="list-group-item active bg-info" aria-current="true">Where You Can Find Us</li>
+        <li class="list-group-item">Diagon Ally, London</li>
+        <li class="list-group-item">The Burrow bar</li>
+        <li class="list-group-item">Hogsmeade Village</li>
+      </ul>
+    </div>
+    <!--Footer-->
+    <footer class="container-fluid bg-footer text-light text-center py-3 m-0 mt-5">
+      <!--breadcrumb-->
+      <section class="py-3 bg-breadcrumb border-top ">
+        <div class="container">
+          <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb justify-content-center mb-0 ">
+              <li class="breadcrumb-item"><a href="#Home" class="link-light">Home</a></li>
+              <li class="breadcrumb-item"><a href="#G" class="link-light">Gryffindor House</a></li>
+              <li class="breadcrumb-item"><a href="#S" class="link-light">Slytherine House</a></li>
+              <li class="breadcrumb-item"><a href="#H" class="link-light">Hufflebuff House</a></li>
+              <li class="breadcrumb-item"><a href="#R" class="link-light">Ravenclaw House</a></li>
+              <li class="breadcrumb-item"><a href="#CU" class="link-light">Contact Us</a></li>
+              <li class="breadcrumb-item"><a href="#FAQ" class="link-light">FAQ</a></li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <p class="mb-1">© 2025 Harry Potter Gift Shop. All rights reserved.</p>
+    </footer>
+    <!--scripts links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
