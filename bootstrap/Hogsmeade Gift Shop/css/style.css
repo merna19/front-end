@@ -1,0 +1,87 @@
+:root{
+    --golden-color: rgb(233, 190, 49);
+    --dark-golden-color: rgb(110, 86, 5);
+    --galaxy-blue: rgb(28, 57, 100);
+    --gryffindor-color:rgb(70, 16, 16);
+    --slytherin-color:rgb(5, 49, 15) ;
+    --huffelbuff-color:rgb(255,211,2);
+    --ravenclaw-color: rgb(12,28,51);
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link 
+{
+    color: var(--golden-color) !important;
+}
+
+.bg-primary
+{
+    background-color: var(--galaxy-blue) !important;
+}
+
+.dropdown-item
+{
+    color: var(--galaxy-blue);
+}
+.dropdown-item:hover
+{
+    color: var(--golden-color);
+}
+.bg-danger
+{
+    background-color: var(--gryffindor-color) !important;
+    color: var(--golden-color);
+}
+.bg-primary .card-text
+{
+    color: white;
+}
+.bg-success
+{
+    background-color:var(--slytherin-color) !important;
+    color: var(--golden-color);
+}
+
+.bg-warning
+{
+    background-color: var(--huffelbuff-color) !important;
+    color: black;
+}
+.bg-info
+{
+    background-color: var(--ravenclaw-color) !important;
+    color: white;
+}
+
+.bg-warning .card .card-title
+{
+    color: var(--golden-color);
+}
+
+.bg-warning .card-text
+{
+    color: black;
+}
+.btn-danger
+{
+    background-color: var(--gryffindor-color);
+    border-color: var(--gryffindor-color);
+}
+.btn-success
+{
+    background-color: var(--slytherin-color);
+    border-color: var(--slytherin-color);
+    color: white;
+}
+.btn-warning
+{
+    background-color: var(--huffelbuff-color);
+    border-color: var(--huffelbuff-color);
+    color: white;
+}
+.btn-info
+{
+    background-color: var(--ravenclaw-color);
+    border-color: var(--ravenclaw-color);
+    color: white;
+}
